@@ -9,7 +9,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.white, //
         appBar: AppBar(
-          title: Text('My Connect'),
+          title: Text('Connexion'),
           centerTitle: true,
           backgroundColor: Colors.blueAccent,
         ),
@@ -107,6 +107,60 @@ class _MyConnectState extends State<MyConnect> {
                       border: OutlineInputBorder()),
                 ),
               ),
+              const SizedBox(height: 30),
+              TextButton(
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.all(15.0),
+                  backgroundColor: Colors.blueAccent,
+                ),
+                onPressed: () {},
+                child: const Text(
+                  'Se Connecter ',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    backgroundColor: Colors.blueAccent,
+                  ),
+                ),
+              ),
+              SizedBox(height: 80),
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                      style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(10.0),
+                        backgroundColor: Colors.blueAccent,
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        "S'enregistrer ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(10.0),
+                        backgroundColor: Colors.blueAccent,
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Mot de passe oublié?',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          backgroundColor: Colors.blueAccent,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ))
         ],
